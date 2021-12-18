@@ -16,8 +16,7 @@
   "scripts": {
     "build": "bash scripts/build.bash",
     "build:babel": "npx babel --extensions .ts ./src -d ./dist/js --minified",
-    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/js/",
-    "build:webpack": "npx webpack"
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/js/"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
