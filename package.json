@@ -1,0 +1,45 @@
+{
+  "name": "is-img",
+  "version": "0.1.0",
+  "description": "Check if the file path/url is an image.",
+  "main": "dist/js/index.js",
+  "types": "dist/js/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/xHyroM/is-img/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xHyroM/is-img.git"
+  },
+  "author": "xHyroM",
+  "license": "ISC",
+  "scripts": {
+    "build": "bash scripts/build.bash",
+    "build:babel": "npx babel --extensions .ts ./src -d ./dist/js --minified",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/js/",
+    "build:webpack": "npx webpack"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/eslint": "^8.2.1",
+    "@types/estree": "^0.0.50",
+    "@types/node": "^16.11.14",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "eslint": "^8.4.1",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "typescript": "^4.4.3",
+    "util": "^0.12.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "engines": {
+    "node": ">=16.x"
+  }
+}

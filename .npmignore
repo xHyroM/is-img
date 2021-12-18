@@ -1,0 +1,19 @@
+# ts
+babel.config.js
+tsconfig.json
+src/
+
+# Eslint
+.eslintrc.json
+.eslintignore
+
+# NPM
+package-lock.json
+
+# git
+.gitignore
+.github
+
+# Other
+tests/
+scripts/
